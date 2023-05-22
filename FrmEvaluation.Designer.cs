@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cboActivities = new System.Windows.Forms.ComboBox();
             this.txtActivityDescription = new System.Windows.Forms.TextBox();
+            this.btnShowReport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numPoints)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,7 +127,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(295, 239);
+            this.btnSave.Location = new System.Drawing.Point(300, 238);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(91, 28);
@@ -184,11 +185,22 @@
             this.txtActivityDescription.Size = new System.Drawing.Size(462, 125);
             this.txtActivityDescription.TabIndex = 48;
             // 
+            // btnShowReport
+            // 
+            this.btnShowReport.Location = new System.Drawing.Point(172, 241);
+            this.btnShowReport.Name = "btnShowReport";
+            this.btnShowReport.Size = new System.Drawing.Size(75, 23);
+            this.btnShowReport.TabIndex = 62;
+            this.btnShowReport.Text = "Izvještaj";
+            this.btnShowReport.UseVisualStyleBackColor = true;
+            this.btnShowReport.Click += new System.EventHandler(this.btnShowReport_Click);
+            // 
             // FrmEvaluation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 281);
+            this.Controls.Add(this.btnShowReport);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtEvaluationDate);
             this.Controls.Add(this.label5);
@@ -230,5 +242,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboActivities;
         private System.Windows.Forms.TextBox txtActivityDescription;
+        private System.Windows.Forms.Button btnShowReport;
     }
 }

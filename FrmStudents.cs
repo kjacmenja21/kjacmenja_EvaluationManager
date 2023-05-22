@@ -44,6 +44,5 @@ namespace Evaluation_Manager
                 frmEvaluation.ShowDialog();
             }
         }
-
     }
 }
